@@ -16,7 +16,6 @@ def buildNodes(aNodeRecord):
     elif 'Person' in labelSet:
         data.update({"faveColor":"#61bffc"})
 
-
     return {"data": data}
 
 def buildEdges(aRelationRecord):
@@ -50,7 +49,8 @@ def haha():
             # 'height': 'mapData(weight, 0, 100, 10, 60)',            
             # 'color': 'white',
             'background-color': 'data(faveColor)',
-            "min-zoomed-font-size": 10,
+            "min-zoomed-font-size": 6,
+            "font-size": 6,
             # 'text-outline-width': 1,
             # 'text-outline-color': '#888'
           }
@@ -61,7 +61,8 @@ def haha():
               # 'curve-style': 'haystack',
               'target-arrow-shape': 'triangle',
               'content': 'data(relationship)',
-              "min-zoomed-font-size": 10,
+              "font-size": 6,
+              "min-zoomed-font-size": 6,
               # 'width': 2    
           }      
         },
